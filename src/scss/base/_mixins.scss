@@ -1,0 +1,9 @@
+@mixin before_category {
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+    }
+}

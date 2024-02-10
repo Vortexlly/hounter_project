@@ -1,0 +1,122 @@
+.review {
+    margin: 0 auto;
+    margin-top: 120px;
+    padding-top: 10px;
+    width: 1440px;
+    height: 664px;
+    overflow: hidden;
+    &__title {
+        margin-top: 12px;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #1B1C57;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 40px;
+        display: grid;
+        justify-content: center;
+        grid-template: 505px/740px;
+        grid-auto-flow: column;
+        column-gap: 56px;
+    }
+    &__item {
+        position: relative;
+        width: 740px;
+        height: 505px;
+        &-img {
+            width: 740px;
+            height: 400px;
+            object-fit: cover;
+        }
+        &__descr {
+            width: 612px;
+            height: 249px;
+            background: #fff;
+            border-radius: 16px;
+            position: absolute;
+            bottom: 0;
+            left: 64px;
+            padding: 32px;
+            &-title {
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 600;
+                color: #1B1C57;
+            }
+            &-subtitle {
+                margin-top: 16px;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #626687;
+            }
+            &-author {
+                margin-top: 24px;
+                width: 548px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            &-contacts {
+                margin-left: 24px;
+            }
+            &-name {
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 500;
+                color: #0E1735;
+            }
+            &-office {
+                margin-top: 4px;
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 500;
+                color: #888B97;
+            }
+            &-rating {
+                width: 74px;
+                height: 28px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+                color: #3C4563;
+                text-align: right;
+                &:before {
+                    content: '';
+                    width: 28px;
+                    height: 28px;
+                    display: block;
+                    background: url(../icons/star.svg);
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &__dots {
+        margin: 0 auto;
+        width: 56px;
+        height: 8px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background: #E0E3EB;
+            &_active {
+                background: #3C4563;
+            }
+        }
+    }
+}

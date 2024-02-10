@@ -1,0 +1,27 @@
+.section-descr {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #F59E0B;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: -40px;
+        display: inline-block;
+        width: 32px;
+        height: 1px;
+        border: 1px solid #F59E0B;
+    }
+    &_review {
+        width: 110px;
+        display: block;
+        margin: 0 auto;
+        &:before {
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

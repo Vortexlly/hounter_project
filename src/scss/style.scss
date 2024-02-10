@@ -1,0 +1,23 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/slick';
+
+@import 'base/mixins';
+
+* {
+    font-family: 'Lexend';
+}
+
+.container {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/other';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/featured';
+@import 'blocks/tour';
+@import 'blocks/review';

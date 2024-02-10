@@ -1,0 +1,132 @@
+.featured {
+    position: relative;
+    width: 1440px;
+    min-height: 662px;
+    margin: 0 auto;
+    margin-top: 120px;
+    overflow: hidden;
+    .container {
+        padding-left: 40px;
+    }
+    &__title {
+        margin-top: 12px;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #1B1C57;
+    }
+    &__nav {
+        position: absolute;
+        top: 18px;
+        left: 552px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__category {
+        display: flex;
+        justify-content: space-between;
+        width: 495px;
+
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 136px;
+        margin-left: 140px;
+    }
+    &__wrapper {
+        margin-top: 40px;
+        display: flex;
+        gap: 40px;
+    }
+    &__item {
+        width: 340px;
+        &__img {
+            position: relative;
+            width: 340px;
+            height: 382px;
+            object-fit: cover;
+            img {
+                z-index: 0;
+            }
+            span {
+                display: flex;
+                width: auto;
+                height: 34px;
+                border-radius: 32px;
+                position: absolute;
+                bottom: 16px;
+                left: 16px;
+                padding: 8px 16px;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 500;
+                z-index: 1;
+            }
+            .popular {
+                background: #FEE2E2;
+                color: #EF4444;
+                @include before_category;
+                &:before {
+                    background: url(../icons/sorting/popular.svg);
+                }
+            }
+            .newhouse {
+                background: #DBEAFE;
+                color: #1D4ED8;
+                @include before_category;
+                &:before {
+                    background: url(../icons/sorting/house.svg);
+                }
+            }
+            .bestdeals {
+                background: #D1FAE5;
+                color: #047857;
+                @include before_category;
+                &:before {
+                    background: url(../icons/sorting/wallet.svg);
+                }
+            }
+        }
+        &__title {
+            margin-top: 24px;
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 500;
+                color: #0E1735;
+            }
+            &-price {
+                font-size: 20px;
+                line-height: 32px;
+                font-weight: 500;
+                color: #3C4563;
+            }
+        }
+        &__author {
+            margin-top: 24px;
+            display: grid;
+            grid-template: 24px 22px/56px auto;
+            row-gap: 4px;
+            align-items: center;
+            &-avatar {
+                width: 40px;
+                height: 40px;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            &-name {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #0E1735;
+            }
+            &-location {
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 500;
+                color: #888B97;
+            }
+        }
+    }
+}
